@@ -1,0 +1,96 @@
+<html>
+
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Vogue';
+      src: url(./fonts/Vogue.ttf) format('truetype');
+    }
+  </style>
+</head>
+
+<body id="home">
+  <div id="nav-containter">
+    <nav id="nav">
+      <div><a href="#" class="active">home</a></div>
+      <div><a href="/about">about me</a></div>
+      <div><a href="/performing">performing</a></div>
+      <div><a href="/writing">writing</a></div>
+      <div><a href="/visuals">visuals</a></div>
+    </nav>
+  </div>
+  <header id="slide">
+    <div id="slide1" class="blend slide-item active">
+      <div class="header1 header">
+        <h1>vy-pointe-folio</h1>
+        <div>
+          <a href="/about" class="t-t-cap">about me</a>
+        </div>
+      </div>
+    </div>
+    <div id="slide2" class=" slide-item">
+      <div class="header2 header">
+        <h1>vy-pointe-folio</h1>
+        <div>
+          <a href="/about" class="t-t-cap">about me</a>
+        </div>
+      </div>
+    </div>
+    <div id="slide3" class=" slide-item">
+      <div class="header3 header">
+        <h1>vy-pointe-folio</h1>
+        <div>
+          <a href="/performing" class="t-t-cap">performing</a>
+        </div>
+      </div>
+    </div>
+    <div id="slide4" class=" slide-item">
+      <div class="header4 header">
+        <h1>vy-pointe-folio</h1>
+        <div>
+          <a href="/writing" class="t-t-cap">writing</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="slide5" class=" slide-item">
+      <div class="header5 header">
+        <h1>vy-pointe-folio</h1>
+        <div>
+          <a href="/visuals" class="t-t-cap">visuals</a>
+        </div>
+      </div>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+        viewBox="0 0 44 44" fill="none">
+        <path
+          d="M29.3334 38.0417C28.9685 38.0434 28.6182 37.898 28.3618 37.6383L13.6951 22.9717C13.1589 22.4348 13.1589 21.5652 13.6951 21.0283L28.3618 6.36167C28.9035 5.85684 29.7478 5.87174 30.2714 6.39536C30.795 6.91898 30.8099 7.76323 30.3051 8.305L16.6101 22L30.3051 35.695C30.8413 36.2318 30.8413 37.1015 30.3051 37.6383C30.0486 37.898 29.6984 38.0434 29.3334 38.0417Z"
+          fill="white" fill-opacity="0.6" />
+      </svg>
+    </button>
+    <button class="next" onclick="changeSlide(1)"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+        viewBox="0 0 44 44" fill="none">
+        <path
+          d="M14.6668 38.0417C15.0317 38.0434 15.382 37.898 15.6384 37.6383L30.3051 22.9717C30.8413 22.4348 30.8413 21.5652 30.3051 21.0283L15.6384 6.36167C15.0967 5.85684 14.2524 5.87174 13.7288 6.39536C13.2052 6.91898 13.1903 7.76323 13.6951 8.305L27.3901 22L13.6951 35.695C13.1589 36.2318 13.1589 37.1015 13.6951 37.6383C13.9515 37.898 14.3018 38.0434 14.6668 38.0417Z"
+          fill="white" fill-opacity="0.6" />
+      </svg>
+    </button>
+    <div class="dots-container">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </header>
+  <script src="javascripts/index.js"></script>
+</body>
+
+</html>

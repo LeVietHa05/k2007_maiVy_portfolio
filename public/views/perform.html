@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Vogue';
+            src: url(./fonts/Vogue.ttf) format('truetype');
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-containter">
+        <nav id="nav">
+            <div><a href="#">home</a></div>
+            <div><a href="/about">about me</a></div>
+            <div><a href="/performing" class="active">performing</a></div>
+            <div><a href="/writing">writing</a></div>
+            <div><a href="/visuals">visuals</a></div>
+        </nav>
+    </div>
+
+    <div id="performing" class="fs-1d5vw">
+        <div id="leg-holder" class="center-abs">
+            <img src="images/full-leg.svg" alt="" id="performing-img-1" class="center-abs blend">
+            <img src="images/leg.svg" alt="" id="performing-img-2" class="center-abs">
+        </div>
+        <div class="p-16 blur d-i-b" id="ballet">
+            <div class="p-8-16 t-a-center hover d-i-b">Ballet</div>
+        </div>
+        <div class="p-16 blur d-i-b" id="cheerleading">
+            <div class="p-8-16 t-a-center hover d-i-b">Cheerleading</div>
+        </div>
+        <div class="p-16 blur d-i-b" id="dance">
+            <div class="p-8-16 t-a-center hover d-i-b">Dance compilation</div>
+        </div>
+        <div class="p-16 blur d-i-b" id="costume">
+            <div class="p-8-16 t-a-center hover d-i-b">Costume showcase</div>
+        </div>
+    </div>
+
+    <div id="balletInfo" class="p-80 fs-1d5vw motserrat c-gray">
+        <div class="backtoperform">
+            <img src="images/arrow-left.svg" alt="">
+            <p>Back to Performing</p>
+        </div>
+
+        <div class=" my-32 row g-24">
+            <div class="col-3">
+                <h1 class="vogue fs-3vw t-t-up">BALLET</h1>
+                <ul class="my-16 pl-24">
+                    <li>Pirouette into my world on pointe!</li>
+                </ul>
+                <p class="motserrat fs-1d3vw">I'm showcasing some of my all-time favorite moments featuring my original
+                    choreography here.</p>
+            </div>
+            <div class="col-2-3 video-holder"></div>
+        </div>
+
+        <div class="gallery my-60">
+            <!-- ballet gallery -->
+        </div>
+
+        <div class=" my-32 row g-24">
+            <div class="col-2-3 video-holder"></div>
+            <div class="col-3">
+                <p class="motserrat fs-1d3vw">I also led free weekly Ballet classes for 12 underprivileged children.
+                    This initiative aimed to introduce basic
+                    techniques and make Ballet accessible to young, aspiring dancers who couldn't afford professional
+                    instruction.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="danceInfo" class="p-80 fs-1d5vw motserrat c-gray">
+        <div class="backtoperform">
+            <img src="images/arrow-left.svg" alt="">
+            <p>Back to Performing</p>
+        </div>
+
+        <div class=" my-32 row g-24">
+            <div class="col-2-3 video-holder"></div>
+            <div class="col-3">
+                <h1 class="vogue fs-3vw t-t-up">DANCE COMPLIATION</h1>
+                <ul class="my-16 pl-24">
+                    <li>Check out this mix of my dance highlights! I've got a bit of everything in here. </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gallery my-60">
+            <!-- dance gallery -->
+        </div>
+
+        <div class="row" style="height: 378px;">
+            <div class="col-2"><img src="images/performing-img-1.png" alt=""></div>
+            <div class="col-2 video-holder" style="height: 378px;"></div>
+        </div>
+
+        <div class="row g-16 my-60 justify-space-around">
+            <div class="">
+                <img src="images/performing-img-2.png" alt="">
+            </div>
+            <div class=""><img src="images/performing-img-3.png" alt=""></div>
+            <div class=""><img src="images/performing-img-4.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="costumeInfo" class="p-80 fs-1d5vw motserrat c-gray">
+        <div class="backtoperform">
+            <img src="images/arrow-left.svg" alt="">
+            <p>Back to Performing</p>
+        </div>
+
+        <div class=" my-32 row g-24">
+            <div class="col-3">
+                <h1 class="vogue fs-3vw t-t-up">Traditional costume showcase</h1>
+                <ul class="my-16 pl-24">
+                    <li>Now immerse yourself in the elegance of Ao dai, a symbol of Vietnamese heritage I deeply
+                        cherish. It’s eye-catching, and
+                        it’s got a story to tell.</li>
+                </ul>
+            </div>
+            <div class="col-2-3 video-holder"></div>
+        </div>
+
+        <div class="gallery my-60">
+            <!-- costume gallery -->
+        </div>
+    </div>
+
+    <div id="cheerleadingInfo" class="p-80 fs-1d5vw motserrat c-gray">
+        <div class="backtoperform">
+            <img src="images/arrow-left.svg" alt="">
+            <p>Back to Performing</p>
+        </div>
+
+        <div class=" my-32 row g-24">
+            <div class="col-2-3 video-holder"></div>
+            <div class="col-3">
+                <h1 class="vogue fs-3vw t-t-up">Cheerleading</h1>
+                <ul class="my-16 pl-24">
+                    <li>Pom poms optional, but enthusiasm is a must!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gallery my-60">
+            <!-- costume gallery -->
+        </div>
+    </div>
+
+
+    <script>
+        let ballet_gallery = document.querySelector('#balletInfo .gallery');
+        let ballet_images = [
+            'images/perform_ballet_1.png',
+            'images/perform_ballet_2.png',
+            'images/perform_ballet_3.png',
+            'images/perform_ballet_4.png',
+            'images/perform_ballet_5.png',
+            'images/perform_ballet_6.png',
+            'images/perform_ballet_7.png',
+            'images/perform_ballet_8.png',
+        ];
+        ballet_gallery.innerHTML = ballet_images.map(image => `<img src="${image}" alt="" class="col-3">`).join('');
+
+        let dance_gallery = document.querySelector('#danceInfo .gallery');
+        let dance_images = [
+            'images/perform_dance_1.png',
+            'images/perform_dance_2.png',
+            'images/perform_dance_3.png',
+            'images/perform_dance_4.png',
+            'images/perform_dance_5.png',
+            'images/perform_dance_6.png',
+        ];
+        dance_gallery.innerHTML = dance_images.map(image => `<img src="${image}" alt="" class="col-3">`).join('');
+
+        let costume_gallery = document.querySelector('#costumeInfo .gallery');
+        let costume_images = [
+            'images/perform_costume_1.png',
+            'images/perform_costume_2.png',
+            'images/perform_costume_3.png',
+        ];
+        costume_gallery.innerHTML = costume_images.map(image => `<img src="${image}" alt="">`).join('');
+
+        let cheerleading_gallery = document.querySelector('#cheerleadingInfo .gallery');
+        let cheerleading_images = [
+            'images/perform_cheerleading_1.png',
+            'images/perform_cheerleading_2.png',
+            'images/perform_cheerleading_3.png',
+            'images/perform_cheerleading_4.png',
+        ];
+        cheerleading_gallery.innerHTML = cheerleading_images.map(image => `<img src="${image}" alt="" >`).join('');
+    </script>
+</body>
+
+</html>

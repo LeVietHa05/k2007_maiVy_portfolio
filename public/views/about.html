@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Vogue';
+            src: url(./fonts/Vogue.ttf) format('truetype');
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-containter">
+        <nav id="nav">
+            <div><a href="/">home</a></div>
+            <div><a href="/about" class="active">about me</a></div>
+            <div><a href="/performing">performing</a></div>
+            <div><a href="/writing">writing</a></div>
+            <div><a href="/visuals">visuals</a></div>
+        </nav>
+    </div>
+    <div id="about">
+        <div class="row section">
+            <div class="col-2">
+                <img src="images/about1.png" alt="">
+            </div>
+            <div class="col-2">
+                <div style="padding: 80px; display: flex;flex-direction: column;align-items: flex-start;gap: 16px;">
+                    <h3>Peronal portfolio</h3>
+                    <h1 style="font-family: Vogue; font-size: 6vw; font-weight: normal;">VY M.NGUYEN</h1>
+                    <p>Senior at Hanoi-Amsterdam</p>
+                    <p>Specialized in Russian-English</p>
+                    <div class="row"
+                        style="display: flex; flex-direction: row; justify-content: flex-start;  gap: 8px;">
+                        <div class="col-2 more-about">What's more</div>
+                        <div class="col-2 more-about">My Resume</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 p-80">
+                <div>
+                    <h1 class="vogue fs-3vw">Ams Ambassador - Most Wanted Class 2023</h1>
+                    <ul class="my-16 pl-24">
+                        <li class="fs-1d5vw">Student Ambassador of Engagement—Most Wanted Class 2023</li>
+                    </ul>
+                    <p class="motserrat fs-1d3vw">Ams Ambassador, part of our school's arts
+                        showcase
+                        Ngay Hoi Anh Tai, runs alongside the Most
+                        Wanted Class competition.
+                        60 contestants from 13 Specialized Classes compete through four rounds (Application, Interview,
+                        Top 20—Talent Round, Top
+                        10—Traditional and Evening gowns). I was named Student Ambassador of Engagement, contributing to
+                        my class winning the
+                        Most Desired Class title in the Grand Finale Night, the event's highest honor.</p>
+                </div>
+            </div>
+            <div class="col-2 p-80"><img src="images/about2.png" alt=""></div>
+        </div>
+
+        <div id="active_volunteer" class="p-80">
+            <div>
+                <h1 class="vogue fs-3vw my-16">Active Volunteer</h1>
+                <ul class="motserrat fs-1d3vw  my-16" style="line-height: 36px;">
+                    <li>Renovating remote mountain schools’ reading space and decorating school walls as a surprise
+                        transformation, aiming to
+                        inspire and motivate them.</li>
+                    <li>Handing gifts at the Thuy An Center for the Elderly and Disabled, located 100 kilometers from
+                        Hanoi.</li>
+                    <li>Organize a book fair for 50 children.</li>
+                    <li>Build a new bookcase.</li>
+                </ul>
+            </div>
+            <div class="gallery my-32" id="volunteer">
+            </div>
+            <div class="guide-note">Scroll horizontally to view</div>
+        </div>
+
+        <div id="ballet_teacher" class="p-80">
+            <div>
+                <h1 class="vogue fs-3vw my-16">Ballet teacher</h1>
+            </div>
+            <div class="gallery my-32" id="about-ballet">
+            </div>
+            <div class="guide-note">Scroll horizontally to view</div>
+        </div>
+    </div>
+    <script src="javascripts/index.js"></script>
+    <script>
+        let volunteer_gallery = document.querySelector('#volunteer');
+        let images = [
+            'images/about-volun-1.png',
+            'images/about-volun-2.png',
+            'images/about-volun-3.png',
+            'images/about-volun-4.png',
+            'images/about-volun-5.png',
+        ];
+        volunteer_gallery.innerHTML = images.map(image => `<img src="${image}" alt="">`).join('');
+
+        let ballet_gallery = document.querySelector('#about-ballet');
+        let ballet_images = [
+            'images/about-ballet-1.png',
+            'images/about-ballet-2.png',
+            'images/about-ballet-3.png',
+            'images/about-ballet-4.png',
+            'images/about-ballet-5.png',
+            'images/about-ballet-6.png',
+            'images/about-ballet-7.png',
+            'images/about-ballet-8.png',
+            'images/about-ballet-9.png',
+            'images/about-ballet-10.png',
+            'images/about-ballet-11.png',
+        ];
+        ballet_gallery.innerHTML = ballet_images.map(image => `<img src="${image}" alt="">`).join('');
+    </script>
+</body>
+
+</html>
