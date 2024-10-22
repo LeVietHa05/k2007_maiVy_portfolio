@@ -89,8 +89,23 @@ h3 {
 .fs-1d3vw {
   font-size: 1.3vw;
 }
+.f-st-i {
+  font-style: italic;
+}
+.f-w-normal {
+  font-weight: normal;
+}
+.f-w-smaller {
+  font-weight: lighter;
+}
 .d-i-b {
   display: inline-block;
+}
+.d-n {
+  display: none;
+}
+.visible {
+  display: block;
 }
 
 #nav-containter {
@@ -100,6 +115,7 @@ h3 {
   right: 0;
   display: flex;
   justify-content: center;
+  transition: top 0.3s ease;
 }
 
 #nav {
@@ -321,7 +337,7 @@ h3 {
 
 .gallery {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   gap: 44px;
@@ -343,6 +359,9 @@ h3 {
 }
 .justify-space-around {
   justify-content: space-around;
+}
+.justify-space-between {
+  justify-content: space-between;
 }
 .col-2 {
   flex: 0 0 50%;
@@ -432,6 +451,7 @@ h3 {
   border-radius: 10px;
   border: 1px solid var(--Brand-50, #f9f5ff);
   object-fit: contain;
+  cursor: pointer;
 }
 .hover:hover {
   background: var(--Transparent-white-30, rgba(255, 255, 255, 0.3));
@@ -471,6 +491,14 @@ h3 {
   right: calc(min(10%, 50px));
   transform: translate(-50%, -50%);
 }
+#balletInfo,
+#cheerleadingInfo,
+#costumeInfo,
+#danceInfo,
+#about {
+  max-width: 1440px;
+  margin: auto;
+}
 #balletInfo .gallery img {
   flex: 0 0 30%;
 }
@@ -487,6 +515,7 @@ h3 {
 }
 
 .backtoperform {
+  cursor: pointer;
   display: flex;
   justify-content: flex-start;
   gap: 8px;

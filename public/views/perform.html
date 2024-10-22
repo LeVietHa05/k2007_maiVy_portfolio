@@ -32,21 +32,21 @@
             <img src="images/full-leg.svg" alt="" id="performing-img-1" class="center-abs blend">
             <img src="images/leg.svg" alt="" id="performing-img-2" class="center-abs">
         </div>
-        <div class="p-16 blur d-i-b" id="ballet">
+        <div class="p-16 blur d-i-b" id="ballet" onclick="showInfo('balletInfo')">
             <div class="p-8-16 t-a-center hover d-i-b">Ballet</div>
         </div>
-        <div class="p-16 blur d-i-b" id="cheerleading">
+        <div class="p-16 blur d-i-b" id="cheerleading" onclick="showInfo('cheerleadingInfo')">
             <div class="p-8-16 t-a-center hover d-i-b">Cheerleading</div>
         </div>
-        <div class="p-16 blur d-i-b" id="dance">
+        <div class="p-16 blur d-i-b" id="dance" onclick="showInfo('danceInfo')">
             <div class="p-8-16 t-a-center hover d-i-b">Dance compilation</div>
         </div>
-        <div class="p-16 blur d-i-b" id="costume">
+        <div class="p-16 blur d-i-b" id="costume" onclick="showInfo('costumeInfo')">
             <div class="p-8-16 t-a-center hover d-i-b">Costume showcase</div>
         </div>
     </div>
 
-    <div id="balletInfo" class="p-80 fs-1d5vw motserrat c-gray">
+    <div id="balletInfo" class="p-80 fs-1d5vw motserrat c-gray d-n infor">
         <div class="backtoperform">
             <img src="images/arrow-left.svg" alt="">
             <p>Back to Performing</p>
@@ -56,9 +56,9 @@
             <div class="col-3">
                 <h1 class="vogue fs-3vw t-t-up">BALLET</h1>
                 <ul class="my-16 pl-24">
-                    <li>Pirouette into my world on pointe!</li>
+                    <li class="f-st-i">Pirouette into my world on pointe!</li>
                 </ul>
-                <p class="motserrat fs-1d3vw">I'm showcasing some of my all-time favorite moments featuring my original
+                <p class="motserrat fs-1d3vw f-w-smaller">I'm showcasing some of my all-time favorite moments featuring my original
                     choreography here.</p>
             </div>
             <div class="col-2-3 video-holder"></div>
@@ -71,7 +71,7 @@
         <div class=" my-32 row g-24">
             <div class="col-2-3 video-holder"></div>
             <div class="col-3">
-                <p class="motserrat fs-1d3vw">I also led free weekly Ballet classes for 12 underprivileged children.
+                <p class="motserrat fs-1d3vw f-w-smaller">I also led free weekly Ballet classes for 12 underprivileged children.
                     This initiative aimed to introduce basic
                     techniques and make Ballet accessible to young, aspiring dancers who couldn't afford professional
                     instruction.</p>
@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <div id="danceInfo" class="p-80 fs-1d5vw motserrat c-gray">
+    <div id="danceInfo" class="p-80 fs-1d5vw motserrat c-gray d-n infor">
         <div class="backtoperform">
             <img src="images/arrow-left.svg" alt="">
             <p>Back to Performing</p>
@@ -90,7 +90,7 @@
             <div class="col-3">
                 <h1 class="vogue fs-3vw t-t-up">DANCE COMPLIATION</h1>
                 <ul class="my-16 pl-24">
-                    <li>Check out this mix of my dance highlights! I've got a bit of everything in here. </li>
+                    <li class="f-st-i">Check out this mix of my dance highlights! I've got a bit of everything in here. </li>
                 </ul>
             </div>
         </div>
@@ -104,7 +104,7 @@
             <div class="col-2 video-holder" style="height: 378px;"></div>
         </div>
 
-        <div class="row g-16 my-60 justify-space-around">
+        <div class="row g-16 my-60 justify-space-between">
             <div class="">
                 <img src="images/performing-img-2.png" alt="">
             </div>
@@ -113,7 +113,7 @@
         </div>
     </div>
 
-    <div id="costumeInfo" class="p-80 fs-1d5vw motserrat c-gray">
+    <div id="costumeInfo" class="p-80 fs-1d5vw motserrat c-gray d-n infor">
         <div class="backtoperform">
             <img src="images/arrow-left.svg" alt="">
             <p>Back to Performing</p>
@@ -123,7 +123,7 @@
             <div class="col-3">
                 <h1 class="vogue fs-3vw t-t-up">Traditional costume showcase</h1>
                 <ul class="my-16 pl-24">
-                    <li>Now immerse yourself in the elegance of Ao dai, a symbol of Vietnamese heritage I deeply
+                    <li class="f-st-i">Now immerse yourself in the elegance of Ao dai, a symbol of Vietnamese heritage I deeply
                         cherish. It’s eye-catching, and
                         it’s got a story to tell.</li>
                 </ul>
@@ -136,7 +136,7 @@
         </div>
     </div>
 
-    <div id="cheerleadingInfo" class="p-80 fs-1d5vw motserrat c-gray">
+    <div id="cheerleadingInfo" class="p-80 fs-1d5vw motserrat c-gray d-n infor">
         <div class="backtoperform">
             <img src="images/arrow-left.svg" alt="">
             <p>Back to Performing</p>
@@ -147,7 +147,7 @@
             <div class="col-3">
                 <h1 class="vogue fs-3vw t-t-up">Cheerleading</h1>
                 <ul class="my-16 pl-24">
-                    <li>Pom poms optional, but enthusiasm is a must!</li>
+                    <li class="f-st-i">Pom poms optional, but enthusiasm is a must!</li>
                 </ul>
             </div>
         </div>
@@ -199,6 +199,30 @@
             'images/perform_cheerleading_4.png',
         ];
         cheerleading_gallery.innerHTML = cheerleading_images.map(image => `<img src="${image}" alt="" >`).join('');
+    </script>
+    <script>
+        function showInfo(id) {
+            let nav = document.querySelector('#nav-containter');
+            nav.style.top = '-100px';
+            performing.classList.add('d-n');
+            let allInfo = document.querySelectorAll('.infor');
+            allInfo.forEach(info => {
+                info.classList.add('d-n');
+            });
+            document.querySelector(`#${id}`).classList.remove('d-n');
+        }
+        let backtoperforms = document.querySelectorAll('.backtoperform');
+        backtoperforms.forEach(backtoperform => {
+            backtoperform.addEventListener('click', () => {
+                let nav = document.querySelector('#nav-containter');
+                nav.style.top = '70px';
+                performing.classList.remove('d-n');
+                let allInfo = document.querySelectorAll('.infor');
+                allInfo.forEach(info => {
+                    info.classList.add('d-n');
+                });
+            });
+        })
     </script>
 </body>
 
