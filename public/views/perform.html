@@ -79,6 +79,15 @@
                     instruction.</p>
             </div>
         </div>
+
+        <div id="ballet_teacher" class="p-80">
+            <div>
+                <h1 class="vogue fs-3vw my-16">Ballet teacher</h1>
+            </div>
+            <div class="gallery my-32" id="about-ballet">
+            </div>
+            <div class="guide-note">Scroll horizontally to view</div>
+        </div>
     </div>
 
     <div id="danceInfo" class="p-80 fs-1d5vw motserrat c-gray d-n infor">
@@ -163,7 +172,24 @@
 
 
     <script>
-        let ballet_gallery = document.querySelector('#balletInfo .gallery');
+
+        let ballet_gallery = document.querySelector('#about-ballet');
+        let ballet_images2 = [
+            'images/about-ballet-1.png',
+            'images/about-ballet-2.png',
+            'images/about-ballet-3.png',
+            'images/about-ballet-4.png',
+            'images/about-ballet-5.png',
+            'images/about-ballet-6.png',
+            'images/about-ballet-7.png',
+            'images/about-ballet-8.png',
+            'images/about-ballet-9.png',
+            'images/about-ballet-10.png',
+            'images/about-ballet-11.png',
+        ];
+        ballet_gallery.innerHTML = ballet_images2.map(image => `<img src="${image}" alt="">`).join('');
+
+        ballet_gallery = document.querySelector('#balletInfo .gallery');
         let ballet_images = [
             'images/perform_ballet_1.png',
             'images/perform_ballet_2.png',

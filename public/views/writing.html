@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>Writing</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="/stylesheets/write.css">
     <style>
         @font-face {
             font-family: 'Vogue';
@@ -23,12 +23,206 @@
     <div id="nav-containter">
         <nav id="nav">
             <div><a href="/">home</a></div>
-            <div><a href="/about" class="active">about me</a></div>
+            <div><a href="/about">about me</a></div>
             <div><a href="/performing">performing</a></div>
-            <div><a href="/writing">writing</a></div>
+            <div><a href="/writing" class="active">writing</a></div>
             <div><a href="/visuals">visuals</a></div>
         </nav>
     </div>
+
+    <div id="writing">
+        <div>
+            <h1 class="vogue fs-3vw t-t-up">A short story</h1>
+            <ul class="my-16 pl-24 f-st-i">
+                <li>A piece of my creative writing that I absolutely love—want to take a look?</li>
+            </ul>
+        </div>
+        <div class="d-f justify-center align-center">
+            <input type="checkbox" id="checkbox-cover">
+            <input type="checkbox" id="checkbox-page1">
+            <input type="checkbox" id="checkbox-page2">
+            <input type="checkbox" id="checkbox-page3">
+            <input type="checkbox" id="checkbox-page4">
+            <input type="checkbox" id="checkbox-page5">
+            <input type="checkbox" id="checkbox-page6">
+            <input type="checkbox" id="checkbox-page7">
+            <input type="checkbox" id="checkbox-page8">
+            <input type="checkbox" id="checkbox-page9">
+            <input type="checkbox" id="checkbox-page10">
+            <input type="checkbox" id="checkbox-page11">
+            <input type="checkbox" id="checkbox-page12">
+            <input type="checkbox" id="checkbox-page13">
+            <input type="checkbox" id="checkbox-page14">
+            <input type="checkbox" id="checkbox-page15">
+            <input type="checkbox" id="checkbox-page16">
+            <input type="checkbox" id="checkbox-page17">
+            <div class="book">
+                <div class="cover page">
+                    <label for="checkbox-cover"><img src="./images/book-story-1-label.png" class="story-label"
+                            alt="click"></label>
+                    <div class="front-cover1 ">
+                        <img src="./images/book-front-cover.png" alt="" style="position: relative;">
+                    </div>
+                    <div class="front-cover2 ">
+                        <img src="./images/book-back-cover.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let page_imgs = [
+            ['images/book-story-1.png',
+                'images/book-story-1_1.png'],
+            ['images/book-story-1_2.png',
+                'images/book-story-1_3.png'],
+            ['images/book-story-1_4.png',
+                'images/book-story-1_5.png'],
+            ['images/book-story-1_6.png',
+                'images/book-story-1_7.png'],
+            ['images/book-story-1_8.png',
+                'images/book-story-1_9.png'],
+            ['images/book-story-1_10.png',
+                'images/book-story-1_11.png'],
+            ['images/book-story-1_12.png',
+                'images/book-story-1_13.png'],
+            ['images/book-story-2.png',
+                'images/book-story-2_1.png'],
+            ['images/book-story-2_2.png',
+                'images/book-story-2_3.png'],
+            ['images/book-story-2_4.png',
+                'images/book-story-2_5.png'],
+            ['images/book-story-2_6.png',
+                'images/book-story-2_7.png'],
+            ['images/book-story-2_8.png',
+                'images/book-story-2_9.png'],
+            ['images/book-story-2_10.png',
+                'images/book-story-2_11.png'],
+        ]
+
+        let book = document.querySelector('.book');
+        for (let i = 0; i < page_imgs.length; i++) {
+            //page
+            let page_div = document.createElement('div');
+            page_div.classList.add('page');
+            page_div.id = `page${i + 1}`;
+            //front
+            let front_page = document.createElement('div');
+            front_page.classList.add('front-page');
+            let img = document.createElement('img');
+            img.src = page_imgs[i][0];
+            front_page.appendChild(img);
+            let label_next = document.createElement('label');
+            label_next.classList.add('book-next');
+            label_next.setAttribute('for', `checkbox-page${i + 1}`);
+            if (page_imgs[i][0] === 'images/book-story-2.png') {
+                label_next.classList.add('story-label')
+                label_next.style.top = 'calc(var(--book-height) - 15%)';
+                label_next.style.right = 'calc(var(--book-height) * 0.7 - 335px  / 2)';
+                label_next.innerHTML = `<img src="./images/book-story-2-label.png" alt="click">`
+                page_div.appendChild(label_next);
+            } else {
+                front_page.appendChild(label_next);
+            }
+            page_div.appendChild(front_page);
+            //back
+            if (!page_imgs[i][1]) {
+                continue
+            }
+            let back_page = document.createElement('div');
+            back_page.classList.add('back-page');
+            let img_back = document.createElement('img');
+            img_back.src = page_imgs[i][1];
+            back_page.appendChild(img_back);
+            let label_prev = document.createElement('label');
+            label_prev.classList.add('book-prev');
+            label_prev.setAttribute('for', `checkbox-page${i + 1}`);
+            back_page.appendChild(label_prev);
+            page_div.appendChild(back_page);
+            book.appendChild(page_div);
+
+            //add page to book
+            book.appendChild(page_div);
+
+        }
+
+        book.innerHTML += '<div class="back-cover"></div>';
+
+        let story_label1 = document.querySelector('label[for="checkbox-cover"]');
+        let story_label2 = document.querySelector('.story-label.book-next');
+        let input1 = document.querySelector('#checkbox-cover');
+        story_label1.addEventListener('click', () => {
+            //when this label pressed, the book turns to the first page by check and uncheck the other labels
+            let checkboxs = document.querySelectorAll('input[type="checkbox"]');
+            //filter out the unchecked checkbox
+            checkboxs = Array.from(checkboxs).filter(checkbox => checkbox.checked);
+            console.log(checkboxs);
+            let i = checkboxs.length - 1;
+            function turnPage(i) {
+                if (i == 0) {
+                    return;
+                }
+                setTimeout(() => {
+                    checkboxs[i].checked = false;
+                    turnPage(i - 1);
+                }, 200);
+            }
+            setTimeout(() => {
+                if (checkboxs.length == 0) {
+                    return;
+                }
+                turnPage(i);
+                input1.checked = true;
+            }, 0);
+        });
+
+
+        story_label2.addEventListener('click', () => {
+            //this label is in between the last page and the first page, so to turn to this page, 
+            // we need to check the page before it and uncheck the page after it
+            let checkboxs = document.querySelectorAll('input[type="checkbox"]');
+            //find the checkbox index that have this label
+            let THISINDEX = Array.from(checkboxs).findIndex(checkbox => checkbox.id == 'checkbox-page8');
+
+            //find the last checked checkbox index
+            let LASTINDEX = Array.from(checkboxs).findLastIndex(checkbox => checkbox.checked);
+            console.log(THISINDEX, LASTINDEX);
+            if (LASTINDEX == -1) {
+                checkboxs[0].checked = true; LASTINDEX++;
+            }
+            if (LASTINDEX == 7) return;
+            if (LASTINDEX < THISINDEX) {
+
+                turnPage(LASTINDEX);
+                setTimeout(() => {
+                    checkboxs[THISINDEX].checked = false;
+                }, 10)
+            }
+            if (LASTINDEX > THISINDEX) {
+                turnPage(LASTINDEX);
+                checkboxs[8].checked = false;
+            }
+
+            function turnPage(i) {
+                if (i == THISINDEX) {
+                    return;
+                }
+                if (i < THISINDEX) {
+                    setTimeout(() => {
+                        checkboxs[i].checked = true;
+                        turnPage(i + 1);
+                    }, 200);
+                }
+                if (i > THISINDEX) {
+                    setTimeout(() => {
+                        checkboxs[i].checked = false;
+                        turnPage(i - 1);
+                    }, 200);
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

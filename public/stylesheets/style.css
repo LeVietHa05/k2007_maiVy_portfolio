@@ -110,6 +110,9 @@ h3 {
 .d-n {
   display: none !important;
 }
+.d-f {
+  display: flex;
+}
 .visible {
   display: block;
 }
@@ -366,11 +369,17 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-space-around {
   justify-content: space-around;
 }
 .justify-space-between {
   justify-content: space-between;
+}
+.align-center {
+  align-items: center;
 }
 .col-2 {
   flex: 0 0 50%;
@@ -518,7 +527,7 @@ h3 {
 #cheerleadingInfo,
 #costumeInfo,
 #danceInfo,
-#about {
+#about, #writing {
   max-width: 1440px;
   margin: auto;
 }
@@ -556,4 +565,13 @@ h3 {
   align-items: center;
   border-radius: 32px;
   background: var(--Transparent-white-30, rgba(255, 255, 255, 0.3));
+}
+
+/* end of performing */
+
+/* start of writing */
+
+#writing {
+  padding: 200px 80px 70px;
+  color: var(--Gray-25, #fcfcfd);
 }
