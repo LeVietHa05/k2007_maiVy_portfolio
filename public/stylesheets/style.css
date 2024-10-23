@@ -50,11 +50,17 @@ h3 {
 .pr-32 {
   padding-right: 32px;
 }
+.pr-60 {
+  padding-right: 60px;
+}
 .pl-24 {
   padding-left: 24px;
 }
 .pl-32 {
   padding-left: 32px;
+}
+.pl-60 {
+  padding-left: 60px;
 }
 .py-32 {
   padding: 32px 0;
@@ -86,6 +92,9 @@ h3 {
 .my-80 {
   margin-top: 80px;
   margin-bottom: 80px;
+}
+.mb-32{
+  margin-bottom: 32px;
 }
 .vogue {
   font-family: Vogue;
@@ -126,6 +135,9 @@ h3 {
 .fs-32 {
   font-size: 32px;
 }
+.fs-36 {
+  font-size: 36px;
+}
 .fs-44 {
   font-size: 44px;
 }
@@ -141,11 +153,14 @@ h3 {
 .f-st-i {
   font-style: italic;
 }
+.f-w-600 {
+  font-weight: 600;
+}
 .f-w-normal {
-  font-weight: normal;
+  font-weight: 400;
 }
 .f-w-smaller {
-  font-weight: lighter;
+  font-weight: 300;
 }
 .d-i-b {
   display: inline-block;

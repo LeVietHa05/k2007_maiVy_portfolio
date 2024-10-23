@@ -31,12 +31,77 @@
     </div>
 
     <div id="writing">
+        <h1 class="vogue fs-44 f-w-normal t-t-up">Braille books </h1>
+        <!-- ------------------------ -->
+        <div class="row my-32 justify-space-between">
+            <div class="col-2">
+                <h1 class="vogue fs-36 f-w-normal t-t-up">Little Mo’s Big Leap</h1>
+                <ul class="fs-24 f-st-i f-w-600 my-16 pl-24">
+                    <li>For two years, I've contributed to Vietnam's first and largest Braille library. I craft Braille
+                        books with tactile
+                        images, collaborating closely with visually impaired children. </li>
+                </ul>
+            </div>
+            <div class=" pr-60">
+                <img src="images/writing-1.png" alt="">
+            </div>
+        </div>
+        <!-- ------------------------ -->
+        <div class="row my-32 justify-space-between">
+            <div class=" pr-60">
+                <img src="images/writing-2.png" alt="">
+            </div>
+            <div class="col-2">
+                <ul class="fs-24 f-st-i f-w-600 my-16 pl-24">
+                    <li>Through a combination of braille text and textured embroidery, this tactile book creates an
+                        engaging learning experience
+                        for children with visual impairments.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- ------------------------ -->
+        <div class="row my-32 justify-space-between">
+            <div class="col-2">
+                <ul class="fs-24 f-st-i f-w-600 my-16 pl-24">
+                    <li>As young readers explore the raised dots of braille with their fingertips, they discover stories
+                        while building literacy
+                        skills.</li>
+                </ul>
+            </div>
+            <div class=" pr-60">
+                <img src="images/writing-3.png" alt="">
+            </div>
+        </div>
+        <!-- ------------------------ -->
+        <div class="row my-32 justify-space-between">
+            <div class=" pr-60">
+                <img src="images/writing-4.png" alt="">
+            </div>
+            <div class="col-2">
+                <ul class="fs-24 f-st-i f-w-600 my-16 pl-24">
+                    <li>The embroidered elements – from playful monkeys to towering trees – add depth and dimension,
+                        helping children develop
+                        spatial understanding and fire their imaginations.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- ------------------------ -->
+        <ul class="fs-24 f-st-i f-w-600 my-16 pl-24">
+            <li>Each page invites active exploration, making learning both interactive and meaningful.</li>
+        </ul>
+        <!-- ------------------------ -->
+        <div class="gallery mb-32" id="writing-gallery">
+
+        </div>
+        <div class="border-bottom my-60"></div>
+        <!-- ------------------------ -->
         <div>
             <h1 class="vogue t-t-up fs-44">A short story</h1>
             <ul class="my-16 pl-24 f-st-i fs-24">
                 <li>A piece of my creative writing that I absolutely love—want to take a look?</li>
             </ul>
         </div>
+        <!-- ------------------------ -->
         <div class="d-f justify-center align-center">
             <input type="checkbox" id="checkbox-cover">
             <input type="checkbox" id="checkbox-page1">
@@ -69,7 +134,42 @@
                 </div>
             </div>
         </div>
+
+        <!-- ------------------------ -->
+        <div class="border-bottom my-80 py-32"></div>
+        <!-- ------------------------ -->
+        <div id="journal" class="row g-24">
+            <div class="col-2 row" style="scale: 1.1;justify-content: flex-start;">
+                <div style="position: relative; left: 100px;"><img src="images/writing-11.png" alt=""></div>
+                <div><img src="images/writing-12.png" alt=""></div>
+            </div>
+            <div class="">
+                <h1 class="vogue fs-44 t-t-cap f-w-normal">
+                    journal
+                </h1>
+                <ul class="my-16 fs-24 f-st-i pl-24">
+                    <li>Ah yes, I’m also a journalist, and a pretty promising one!</li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <script>
+        let writing_gallery = document.querySelector('#writing-gallery');
+        let images = [
+            'images/writing-5.png',
+            'images/writing-6.png',
+            'images/writing-7.png',
+            'images/writing-8.png',
+            'images/writing-9.png',
+            'images/writing-10.png',
+        ];
+        images.forEach(image => {
+            let img = document.createElement('img');
+            img.src = image;
+            writing_gallery.appendChild(img);
+        })
+    </script>
 
     <script>
         let page_imgs = [
@@ -223,6 +323,8 @@
             }
         })
     </script>
+
+    <script src="javascripts/index.js"></script>
 </body>
 
 </html>
