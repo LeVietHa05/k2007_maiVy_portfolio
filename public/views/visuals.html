@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vy-pointe-folio - Writing</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Vogue';
+            src: url(./fonts/Vogue.ttf) format('truetype');
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-containter">
+        <nav id="nav">
+            <div><a href="/">home</a></div>
+            <div><a href="/about">about me</a></div>
+            <div><a href="/performing">performing</a></div>
+            <div><a href="/writing">writing</a></div>
+            <div><a href="/visuals" class="active">visuals</a></div>
+        </nav>
+    </div>
+
+    <div id="visuals">
+        <div class="d-f justify-center align-center g-24" style="width: 100%; height: 100vh;" id="visuals-main">
+            <div style="position: relative;" id="toPhotoshoot">
+                <div><img src="/images/visual-main-1.png" alt=""></div>
+                <div class="overlay vogue fs-2vw f-w-normal">
+                    <div> Photoshoot</div>
+                </div>
+            </div>
+            <div style="position: relative;" id="toSketch">
+                <div><img src="/images/visual-main-2.png" alt=""></div>
+                <div class="overlay vogue fs-2vw f-w-normal">
+                    <div>Digital Sketch</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="photoshoot" class="p-80 ">
+            <div class="backtoperform fs-1d5vw">
+                <img src="images/arrow-left.svg" alt="">
+                <p>Back to Visuals</p>
+            </div>
+            <!-- ------------------------------------- -->
+            <div class="my-60">
+                <div class="row my-32">
+                    <div class="col-2 visuals-header p-20-32">
+                        <h1 class="vogue fs-48 f-w-normal">En Pointe Noir</h1>
+                    </div>
+                    <div class="col-2 visuals-content p-20-32">
+                        <ul class="pl-24 fs-24">
+                            <li>Creative Director, Model, Layout Designer: Nguyen Mai Vy</li>
+                            <li>Photographer, Editor: Tran Le Nguyen Linh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="enpointeGallery"></div>
+            <div class="guide-note border-bottom py-32 fs-20">Scroll horizontally to view</div>
+            <!-- ----------------------------------- -->
+            <div class="my-60">
+                <div class="row my-32">
+                    <div class="col-2 visuals-header p-20-32">
+                        <h1 class="vogue fs-48 f-w-normal">Pink Tulle Dreams</h1>
+                    </div>
+                    <div class="col-2 visuals-content p-20-32">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="pinkTulleDreamGallery"></div>
+            <div class="guide-note border-bottom py-32 fs-20">Scroll horizontally to view</div>
+            <!-- ----------------------------------- -->
+            <div class="my-60">
+                <div class="row my-32">
+                    <div class="col-2 visuals-header p-20-32">
+                        <h1 class="vogue fs-48 f-w-normal">Amsers: The Face of Excellence</h1>
+                    </div>
+                    <div class="col-2 visuals-content p-20-32">
+                        <ul class="pl-24 fs-24">
+                            <li>Featured in Hoa Hoc Tro magazine (2023)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="amserGallery"></div>
+            <div class="guide-note border-bottom py-32 fs-20">Scroll horizontally to view</div>
+            <!-- ----------------------------------- -->
+            <div class="my-60">
+                <div class="row my-32">
+                    <div class="col-2 visuals-header p-20-32">
+                        <h1 class="vogue fs-48 f-w-normal">Quantum of speech</h1>
+                    </div>
+                    <div class="col-2 visuals-content p-20-32">
+                        <h1 class="vogue fs-48 f-w-normal pr-32">Where words meet physics</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="quantumGallery"></div>
+            <div class="guide-note border-bottom py-32 fs-20">Scroll horizontally to view</div>
+        </div>
+
+        <div id="sketch" class="p-80 ">
+            <div class="backtoperform fs-1d5vw">
+                <img src="images/arrow-left.svg" alt="">
+                <p>Back to Visuals</p>
+            </div>
+            <!-- ------------------------------------- -->
+            <div class="my-60">
+                <div class="row my-32">
+                    <div class="col-2 visuals-header p-20-32">
+                        <h1 class="vogue fs-48 f-w-normal">Digital sketch</h1>
+                    </div>
+                    <div class="col-2 visuals-content p-20-32">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-center align-center">
+                <img src="images/visuals-sketch.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let enponteGalleryImgs = [
+            'images/visuals-enpointe-1.png',
+            'images/visuals-enpointe-2.png',
+            'images/visuals-enpointe-3.png',
+            'images/visuals-enpointe-4.png',
+            'images/visuals-enpointe-5.png',
+            'images/visuals-enpointe-6.png',
+            'images/visuals-enpointe-7.png',
+            'images/visuals-enpointe-8.png',
+            'images/visuals-enpointe-9.png',
+            'images/visuals-enpointe-10.png',
+        ]
+        let enpointeGallery = document.getElementById('enpointeGallery');
+        enpointeGallery.innerHTML = enponteGalleryImgs.map(img => `<img src="${img}" alt="">`).join('');
+
+        let pinkTulleDreamGalleryImgs = [
+            'images/visuals-pinktulle-01.png',
+            'images/visuals-pinktulle-02.png',
+            'images/visuals-pinktulle-03.png',
+            'images/visuals-pinktulle-04.png',
+            'images/visuals-pinktulle-05.png',
+            'images/visuals-pinktulle-06.png',
+            'images/visuals-pinktulle-07.png',
+            'images/visuals-pinktulle-08.png',
+            'images/visuals-pinktulle-09.png',
+            'images/visuals-pinktulle-10.png',
+        ]
+        let pinkTulleDreamGallery = document.getElementById('pinkTulleDreamGallery');
+        pinkTulleDreamGallery.innerHTML = pinkTulleDreamGalleryImgs.map(img => `<img src="${img}" alt="">`).join('');
+
+        let amserGalleryImgs = [
+            'images/visuals-amser-1.png',
+            'images/visuals-amser-2.png',
+            'images/visuals-amser-3.png',
+            'images/visuals-amser-4.png',
+            'images/visuals-amser-5.png',
+            'images/visuals-amser-6.png',
+            'images/visuals-amser-7.png',
+            'images/visuals-amser-8.png',
+            'images/visuals-amser-9.png',
+            'images/visuals-amser-10.png',
+            'images/visuals-amser-11.png',
+            'images/visuals-amser-12.png',
+        ]
+        let amserGallery = document.getElementById('amserGallery');
+        amserGallery.innerHTML = amserGalleryImgs.map(img => `<img src="${img}" alt="">`).join('');
+
+        let quantumGalleryImgs = [
+            'images/visuals-quantum-1.png',
+            'images/visuals-quantum-2.png',
+            'images/visuals-quantum-3.png',
+            'images/visuals-quantum-4.png',
+            'images/visuals-quantum-5.png',
+            'images/visuals-quantum-6.png',
+            'images/visuals-quantum-7.png',
+            'images/visuals-quantum-8.png',
+            'images/visuals-quantum-9.png',
+            'images/visuals-quantum-10.png'
+        ]
+        let quantumGallery = document.getElementById('quantumGallery');
+        quantumGallery.innerHTML = quantumGalleryImgs.map(img => `<img src="${img}" alt="">`).join('');
+    </script>
+
+
+    <script>
+        let nav = document.getElementById('nav-containter');
+        let visuals_main = document.getElementById('visuals-main');
+        let toPhotoshoot = document.getElementById('toPhotoshoot');
+        let toSketch = document.getElementById('toSketch');
+        let photoshoot = document.getElementById('photoshoot');
+        let sketch = document.getElementById('sketch');
+        let backtoperforms = document.querySelectorAll('.backtoperform');
+
+        toPhotoshoot.addEventListener('click', () => {
+            photoshoot.style.display = 'block';
+            sketch.style.display = 'none';
+            visuals_main.style.display = 'none';
+            nav.style.top = '-100px';
+        })
+
+        toSketch.addEventListener('click', () => {
+            photoshoot.style.display = 'none';
+            sketch.style.display = 'block';
+            visuals_main.style.display = 'none';
+            nav.style.top = '-100px';
+        })
+
+        backtoperforms.forEach(backtoperform => {
+            backtoperform.addEventListener('click', () => {
+                nav.style.top = '70px';
+                visuals_main.style.display = 'flex';
+                photoshoot.style.display = 'none';
+                sketch.style.display = 'none';
+            });
+        })
+    </script>
+</body>
+
+</html>
