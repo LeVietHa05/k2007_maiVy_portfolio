@@ -42,8 +42,8 @@
                     <p>Specialized in Russian-English</p>
                     <div class="row fs-20"
                         style="display: flex; flex-direction: row; justify-content: flex-start;  gap: 8px;">
-                        <div class="col-2 more-about">What's more</div>
-                        <div class="col-2 more-about">My Resume</div>
+                        <div class="col-2 more-about" onclick="scrolldown()">What's more</div>
+                        <div class="col-2 more-about" onclick="gonewtab(`https://drive.google.com/file/d/1M7M02g08HqKBgQPcQgAXMSgHD1McNvj5/view?fbclid=IwY2xjawGNf5BleHRuA2FlbQIxMAABHaxVNr31-OZGhEbCIJwy4G19tL5HJd_G1yJ6P460805RYLXq1UanOyikFA_aem_woElXIPQtEHTkdj3P6FvjQ`)">My Resume</div>
                     </div>
                 </div>
             </div>
@@ -102,6 +102,15 @@
         ];
         volunteer_gallery.innerHTML = images.map(image => `<img src="${image}" alt="">`).join('');
 
+        function gonewtab(url) {
+            window.open(url, '_blank');
+        }
+        function scrolldown() {
+            //smooth scroll
+            document.querySelector('#active_volunteer').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     </script>
 </body>
 
