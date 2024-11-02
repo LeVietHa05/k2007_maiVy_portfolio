@@ -751,6 +751,7 @@
     <script>
         let nav = document.getElementById('nav-containter');
         let writing_main = document.getElementById('writing-main');
+        let writing = document.getElementById('writing');
         let book1 = document.getElementById('book1');
         let book2 = document.getElementById('book2');
         let book3 = document.getElementById('book3');
@@ -765,6 +766,7 @@
 
         toBook1.addEventListener('click', () => {
             writing_main.style.display = 'none';
+            writing.style.paddingTop = '24px';
             book1.style.display = 'block';
             book2.style.display = 'none';
             book3.style.display = 'none';
@@ -775,6 +777,7 @@
 
         toBook2.addEventListener('click', () => {
             writing_main.style.display = 'none';
+            writing.style.paddingTop = '24px';
             book1.style.display = 'none';
             book2.style.display = 'block';
             book3.style.display = 'none';
@@ -785,6 +788,7 @@
 
         toBook3.addEventListener('click', () => {
             writing_main.style.display = 'none';
+            writing.style.paddingTop = '24px';
             book1.style.display = 'none';
             book2.style.display = 'none';
             book3.style.display = 'block';
@@ -795,6 +799,7 @@
 
         toBook4.addEventListener('click', () => {
             writing_main.style.display = 'none';
+            writing.style.paddingTop = '24px';
             book1.style.display = 'none';
             book2.style.display = 'none';
             book3.style.display = 'none';
@@ -805,6 +810,7 @@
 
         toBook5.addEventListener('click', () => {
             writing_main.style.display = 'none';
+            writing.style.paddingTop = '24px';
             book1.style.display = 'none';
             book2.style.display = 'none';
             book3.style.display = 'none';
@@ -816,6 +822,7 @@
         backtoperform.forEach(back => {
             back.addEventListener('click', () => {
                 writing_main.style.display = 'block';
+                writing.style.paddingTop = '200px';
                 book1.style.display = 'none';
                 book2.style.display = 'none';
                 book3.style.display = 'none';
