@@ -35,6 +35,26 @@ navLink.forEach(function (link) {
     });
 });
 
+let returnTop = document.createElement('div');
+returnTop.id = 'return-top';
+returnTop.innerHTML = `<img src="images/arrow-left.svg" alt ="top">`
+
+
+window.onscroll = function () {
+    if (window.scrollY > 200) {
+        returnTop.style.display = 'block';
+    }
+    else {
+        returnTop.style.display = 'none';
+    }
+}
+returnTop.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+});
+
+document.body.appendChild(returnTop);
+
+
 
 if (window.location.pathname === '/') {
     let home_bgIndex = 0;
