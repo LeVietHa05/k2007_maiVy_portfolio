@@ -273,6 +273,7 @@ h3 {
 
 #slide1 {
   background-image: url("../images/home-img-1.png");
+  background-size: contain;
 }
 #slide2 {
   background-image: url("../images/home-img-2.png");

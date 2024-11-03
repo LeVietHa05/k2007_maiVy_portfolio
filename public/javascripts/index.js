@@ -41,6 +41,14 @@ if (window.location.pathname === '/') {
     setInterval(function () {
         let slide5 = document.getElementById('slide5');
         slide5.style.backgroundImage = home_bgs[home_bgIndex];
+        if (home_bgIndex == home_bgs.length - 1) {
+            slide5.style.backgroundSize = 'contain';
+            slide5.style.backgroundPosition = 'center'; 
+        }
+        else {
+            slide5.style.backgroundSize = 'cover';
+            slide5.style.backgroundPosition = 'initial';
+        }
         home_bgIndex = (home_bgIndex + 1) % home_bgs.length
     }, 1600);
 
