@@ -285,7 +285,7 @@ h3 {
   background-image: url("../images/home-img-4.png");
 }
 #slide5 {
-  background-image: url("../images/home-img-5.png");
+  background-image: url("../images/home-img-11.png");
 }
 .header {
   max-width: 39%;
@@ -377,7 +377,7 @@ h3 {
   text-align: center;
   position: fixed;
   bottom: 10px;
-
+  z-index: 2;
   width: 100%;
   display: flex;
   align-items: center;
@@ -754,5 +754,4 @@ h3 {
 
 #return-top:hover {
   scale: 1.1;
-  
 }

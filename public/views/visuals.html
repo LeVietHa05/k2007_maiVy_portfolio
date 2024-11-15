@@ -54,6 +54,21 @@
             <div class="my-60">
                 <div class="row my-32">
                     <div class="col-2 visuals-header p-20-32">
+                        <h1 class="vogue fs-48 f-w-normal">Professional ballet stock series (2024)</h1>
+                    </div>
+                    <div class="col-2 visuals-content p-20-32">
+                        <ul class="pl-24 fs-24">
+                            <li>Classical positions and studio poses for commercial use</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="pro-ballet-gallery"></div>
+            <div class="guide-note border-bottom py-32 fs-20">Scroll horizontally to view</div>
+            <!-- ------------------------------------- -->
+            <div class="my-60">
+                <div class="row my-32">
+                    <div class="col-2 visuals-header p-20-32">
                         <h1 class="vogue fs-48 f-w-normal">En Pointe Noir</h1>
                     </div>
                     <div class="col-2 visuals-content p-20-32">
@@ -132,6 +147,16 @@
     </div>
 
     <script>
+        let proBalletGalleryImgs = [
+            '/images/visuals-proballet-1.png',
+            '/images/visuals-proballet-2.png',
+            '/images/visuals-proballet-3.png',
+            '/images/visuals-proballet-4.png',
+            '/images/visuals-proballet-5.png',
+        ]
+        let proBalletGallery = document.getElementById('pro-ballet-gallery')
+        proBalletGallery.innerHTML = proBalletGalleryImgs.map(img => `<img src="${img}" alt="">`).join('');
+
         let enponteGalleryImgs = [
             'images/visuals-enpointe-1.png',
             'images/visuals-enpointe-2.png',
